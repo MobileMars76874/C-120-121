@@ -17,9 +17,7 @@ console.log("Model Loaded!");
 }
 function draw(){
 image(Video, 0, 0, 280, 280);
-
-img = document.getElementById("Video");
-classifier.classify(img, getresults);
+classifier.classify(Video, getresults);
 }
 
 function getresults(error, results){
