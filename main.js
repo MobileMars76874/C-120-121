@@ -2,21 +2,21 @@ function preload(){
 }
 
 function setup(){
-canvas = createCanvas(300, 300);
-canvas.position();
+canvas = createCanvas(280, 280);
+canvas.center();
 Video = createCapture(VIDEO);
 Video.hide();
 
 console.log("ml5 version is : " + ml5.version);
 
-classifier = ml5.imageClassifier("Mobilenet", model_loaded);
+classifier = ml5.imageClassifier("MobileNet", model_loaded);
 }
 
 function model_loaded(){
 console.log("Model Loaded!");
 }
 function draw(){
-image(Video, 0, 0, 300, 300);
+image(Video, 0, 0, 280, 280);
 
 img = document.getElementById("Video");
 classifier.classify(img, getresults);

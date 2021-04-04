@@ -26,3 +26,11 @@ background-color: cyan;
 line-height: 3;
 text-align: center;
 }
+
+canvas{
+border-style: ridge;
+border-width: 2px;
+border-color: black;
+margin-top: 125px;
+box-shadow: 5px 5px 18px blue;
+}
